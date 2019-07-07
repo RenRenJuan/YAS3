@@ -2,7 +2,7 @@
 
 ## About this fork
 
-Forked for [WINS3FS2](https://wins3fs2.ai-integration.biz/doc). At least initially I expect few and slight changes to accomodate the
+Forked for [WINS3FS2](https://wins3fs.ai-integration.biz/doc). At least initially I expect few and slight changes to accomodate the
 common dot net GUI of WINS3FS2. My changes will have identical licensing to the upstream project.
 
 ## License
