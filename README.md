@@ -23,7 +23,7 @@ Sections of this file
 3. Instructions for installing the current binaries
 4. The original readmes for wins3fs and s3fs-fuse.
 
-This &sect;'s header links the documentation and the link at the top of the document links support.
+This &sect;'s header links the main document at the top of which there's a link for support.
 
 # Repository Layout #
 
@@ -60,17 +60,13 @@ Starred  items  present in my github repo, others in my private git repo.
   
 ## Mac OSX ##
 
-  The Mac app installs in the normal way from the binary (dmg).
+  The Mac app installs in the normal way from the binary (dmg). Install [OS X Fuse](https://osxfuse.github.io) first.
 
 ## Windows ##
 
   WINS3FS operates as a dot net extension of WinFsp so you need to first install [WinFsp](http://www.secfs.net/winfsp/download/).
 
   After that, assuming you defaulted everything, you can install the MSI the normal way.
-
-## 1.0 Common ##
-
-  After installation, operation will be evident in messages presented in the GUI.
 
 # Original Readmes #
 
