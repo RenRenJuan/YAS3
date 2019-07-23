@@ -27,17 +27,18 @@ This &sect;'s header links the documentation and the link at the top of the docu
 
 # Repository Layout #
 
-The items with trailing star present in my github repo, the others in my private git repo only.
+Starred  items  present in my github repo, others in my private git repo.
 
-File/Folder | Content |
+|File/Folder | Content |
 -------------|---------
-  * README.md*         | this file
-  * dotNetV1          | original 2008 sourceforge code set
-  * WINS3FS*          | current Mac and Windows binaries 
-  * s3fs*              | forked s3fs repo (root at github)
-  * WINS3FS/code     | the VS code project (2.0 and later only)
-  * WINS3FS/VS2K17   | the VisualStudio 2017 solution(s)
-  * WINS3FS/VS2K19   | the VisualStudio 2019 solution (mac, 2.0 and later only)
+|   README.md*         | this file |
+|   dotNetV1          | original 2008 sourceforge code set|
+|   WINS3FS*          | current Mac and Windows binaries |
+|   s3fs*              | forked s3fs repo (root at github)|
+|   WINS3FS/code     | the VS code project (2.0 and later only)|
+|   WINS3FS/VS2K17   | the VisualStudio 2017 solution(s)|
+|   WINS3FS/VS2K19   | the VisualStudio 2019 solution (mac, 2.0 and later only)|
+|---------------------|---------------------------------------------------------|
 
  The VS code project is for linux and mono, the VS2K19 is for Mac and OSX Fuse s3fs.
 
