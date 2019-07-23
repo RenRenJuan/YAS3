@@ -38,7 +38,7 @@ Starred  items  present in my github repo, others in my private git repo.
 |   WINS3FS/code     | the VS code project (2.0 and later only)|
 |   WINS3FS/VS2K17   | the VisualStudio 2017 solution(s)|
 |   WINS3FS/VS2K19   | the VisualStudio 2019 solution (mac, 2.0 and later only)|
-|---------------------|---------------------------------------------------------|
+
 
  The VS code project is for linux and mono, the VS2K19 is for Mac and OSX Fuse s3fs.
 
@@ -64,9 +64,9 @@ Starred  items  present in my github repo, others in my private git repo.
 
 ## Windows ##
 
-  WINS3FS2 operates as a dot net extension of WinFsp so you need to first install [WinFsp](http://www.secfs.net/winfsp/download/).
+  WINS3FS operates as a dot net extension of WinFsp so you need to first install [WinFsp](http://www.secfs.net/winfsp/download/).
 
-  After that, assuming you defaulted everything, you can install the 32 or 64 bit MSI the normal way.
+  After that, assuming you defaulted everything, you can install the MSI the normal way.
 
 ## 1.0 Common ##
 
