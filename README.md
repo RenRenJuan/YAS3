@@ -3,30 +3,7 @@
 YAS3FS started as a project to refurbish [wins3fs on SourceForge](http://wins3fs.sourceforge.net) for a cloud vendors Windows targetting intentions but it was found to be inadequate so that project
 was cancelled and the scope changed to be an exemplar of DDD and x-platform dot net development. Details are at the /doc path at yas3fs.aii.biz. 
 
-Sections of this file
-
-2. Git repository layout
-3. Instructions for installing the current binaries
-4. The original readme for s3fs-fuse.
-
-This &sect;'s header links the project home.
-
-# Repository Layout #
-
-Starred  items  present in my github repo, others in my private git repo.
-
-|File/Folder | Content |
--------------|---------
-|   README.md*         | this file |
-|   dotNetV1          | original 2008 sourceforge code set|
-|   YAS3FS*          | current Mac and Windows binaries |
-|   s3fs*              | forked s3fs repo (root at github)|
-|   YAS3FS/code     | the VS code project |
-|   YAS3FS/VS2K17   | the VisualStudio 2017 solution(s)|
-|   YAS3FS/VS2K19   | the VisualStudio 2019 solution(s)|
-
-
- The VS code project is for linux and mono, the VS2K19 is for Mac and OSX Fuse s3fs.
+This overview &sect;'s header links the project home and is followed by the original s3fs README. The forked s3fs and binaries for all platforms are here, everything else is in the home domain.
 
 # Binary Installation #
 
@@ -34,27 +11,27 @@ Starred  items  present in my github repo, others in my private git repo.
   standard s3fs on the first two and optionally using the YAS3FS driver for those platforms.
 
   Unix s3fs doesn't run on Windows so the YAS3FS driver isn't optional there.
+   
+  Since unix s3fs is not modified for YAS3FS 1.0, the recommended action for non developer use is to do the regular s3fs installs for those platforms,
+  i.e with port or brew for Mac, the distro's repo for linux.
 
   In 2.0 and later the YAS3FS driver will be the default on all platforms but in 1.0 it is enabled for testing only.
-   
-  Since unix s3fs is not modified for YAS3FS, the recommended action for non developer use is to do the regular s3fs installs for those platforms,
-  i.e with port or brew for Mac, the distro's repo for linux.
 
 ## Linux ##
 
-  There's no install for linux in the 1.0/2.0 epoch, you have to build from source.
+  There's no install for linux in the 1.0/2.0 epoch, you have to build from the sources in the home repo.
   
 ## Mac OSX ##
 
-  The Mac app installs in the normal way from the binary (dmg). Install [OS X Fuse](https://osxfuse.github.io) first.
+  The Mac app installs in the normal way from the binary (dmg). Install [OS X Fuse](https://osxfuse.github.io) first, then install the dmg here.
 
 ## Windows ##
 
   YAS3FS operates as a dot net extension of WinFsp so you need to first install [WinFsp](http://www.secfs.net/winfsp/download/).
 
-  After that, assuming you defaulted everything, you can install the MSI the normal way.
+  After that, assuming you defaulted everything, you can install the MSI here in the normal way.
 
-# Original Readmes #
+# Original S3FS Readme #
 
 ## s3fs
 
