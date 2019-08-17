@@ -1,19 +1,18 @@
 # [YAS3FS](http://yas3fs.ai-integration.biz) #
 
 YAS3FS started as a project to refurbish [wins3fs on SourceForge](http://wins3fs.sourceforge.net) for a cloud vendors Windows targetting intentions but it was found to be inadequate so that project
-was cancelled and the scope changed to be an exemplar of DDD and x-platform dot net development. Details are at the /doc path at yas3fs.aii.biz. 
+was cancelled and the scope changed to be an exemplar of DDD and x-platform dot net development.
+ 
 
-This overview &sect;'s header links the project home and is followed by the original s3fs README. The forked s3fs and binaries for all platforms are here, everything else is in the home domain.
+This &sect;'s header links the project home, followed by binary install overview (Details are at the /doc path at the home domain) and is followed by the original s3fs README. The forked s3fs and binaries for all platforms are here, everything else is in the home domain.
 
-# Binary Installation #
+# Getting Started #
 
   The 1.0 dot net core elements for linux, mac, and windows are common GUI elements presented on all three platforms and operating against
-  standard s3fs on the first two and optionally using the YAS3FS driver for those platforms.
-
-  Unix s3fs doesn't run on Windows so the YAS3FS driver isn't optional there.
+  standard s3fs on the first two and optionally using the YAS3FS driver. Unix s3fs doesn't run on Windows so the YAS3FS driver isn't optional there.
    
   Since unix s3fs is not modified for YAS3FS 1.0, the recommended action for non developer use is to do the regular s3fs installs for those platforms,
-  i.e with port or brew for Mac, the distro's repo for linux.
+  i.e with port or brew for Mac, the distro's repo for linux as well as the dot net core/mono elements.
 
   In 2.0 and later the YAS3FS driver will be the default on all platforms but in 1.0 it is enabled for testing only.
 
