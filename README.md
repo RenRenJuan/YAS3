@@ -1,6 +1,6 @@
-# [WINS3FS](https://wins3fs.ai-integration.biz/doc) #
+# [YAS3FS](https://wins3fs.ai-integration.biz/doc) #
 
-WINS3FS was originally intended to be derived from [wins3fs on SourceForge](http://wins3fs.sourceforge.net) but that project was found inadequate, so the sources were salvaged, with these changes:
+YAS3FS was originally intended to be derived from [wins3fs on SourceForge](http://wins3fs.sourceforge.net) but that project was found inadequate, so the sources were salvaged, with these changes:
 
    * Drop the base directory elements from wins3fs.sourceforge.net and replace
      with something that works oriented to WinFsp on Windows and s3fs elsewhere.
@@ -12,8 +12,8 @@ WINS3FS was originally intended to be derived from [wins3fs on SourceForge](http
        * a dot net core GUI for s3fs
 
 
-Two levels of WINS3FS are distinguished and were developed at the same time, 1.0 targetting just the extension DLL to be used with WinFsp and
-2.0 which has the larger scope above, WINS3FS proper. 1.0 is a dead end branch of the same line of development.
+Two levels of YAS3FS are distinguished and were developed at the same time, 1.0 targetting just the extension DLL to be used with WinFsp and
+2.0 which has the larger scope above, YAS3FS proper. 1.0 is a dead end branch of the same line of development.
 
 While 2.0 and later are not limited to Windows, and may be generalized beyond S3 (as regular s3fs is), the name is retained for simplicity.
 
@@ -33,11 +33,11 @@ Starred  items  present in my github repo, others in my private git repo.
 -------------|---------
 |   README.md*         | this file |
 |   dotNetV1          | original 2008 sourceforge code set|
-|   WINS3FS*          | current Mac and Windows binaries |
+|   YAS3FS*          | current Mac and Windows binaries |
 |   s3fs*              | forked s3fs repo (root at github)|
-|   WINS3FS/code     | the VS code project |
-|   WINS3FS/VS2K17   | the VisualStudio 2017 solution(s)|
-|   WINS3FS/VS2K19   | the VisualStudio 2019 solution(s)|
+|   YAS3FS/code     | the VS code project |
+|   YAS3FS/VS2K17   | the VisualStudio 2017 solution(s)|
+|   YAS3FS/VS2K19   | the VisualStudio 2019 solution(s)|
 
 
  The VS code project is for linux and mono, the VS2K19 is for Mac and OSX Fuse s3fs.
@@ -45,13 +45,13 @@ Starred  items  present in my github repo, others in my private git repo.
 # Binary Installation #
 
   The 1.0 dot net core elements for linux, mac, and windows are common GUI elements presented on all three platforms and operating against
-  standard s3fs on the first two and optionally using the WINS3FS driver for those platforms.
+  standard s3fs on the first two and optionally using the YAS3FS driver for those platforms.
 
-  Unix s3fs doesn't run on Windows so the WINS3FS driver isn't optional there.
+  Unix s3fs doesn't run on Windows so the YAS3FS driver isn't optional there.
 
-  In 2.0 and later the WINS3FS driver will be the default on all platforms but in 1.0 it is enabled for testing only.
+  In 2.0 and later the YAS3FS driver will be the default on all platforms but in 1.0 it is enabled for testing only.
    
-  Since unix s3fs is not modified for WINS3FS, the recommended action for non developer use is to do the regular s3fs installs for those platforms,
+  Since unix s3fs is not modified for YAS3FS, the recommended action for non developer use is to do the regular s3fs installs for those platforms,
   i.e with port or brew for Mac, the distro's repo for linux.
 
 ## Linux ##
@@ -64,7 +64,7 @@ Starred  items  present in my github repo, others in my private git repo.
 
 ## Windows ##
 
-  WINS3FS operates as a dot net extension of WinFsp so you need to first install [WinFsp](http://www.secfs.net/winfsp/download/).
+  YAS3FS operates as a dot net extension of WinFsp so you need to first install [WinFsp](http://www.secfs.net/winfsp/download/).
 
   After that, assuming you defaulted everything, you can install the MSI the normal way.
 
