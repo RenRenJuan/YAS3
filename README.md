@@ -4,7 +4,7 @@ YAS3FS started as a project to refurbish [wins3fs on SourceForge](http://wins3fs
 was cancelled and the scope changed to be an exemplar of DDD and x-platform dot net development.
  
 
-This &sect;'s header links the project home, followed by binary install overview (Details are at the /doc path at the home domain) and is followed by the original s3fs README. The forked s3fs and binaries for all platforms are here, everything else is in the home domain.
+This &sect;'s header links the project home, followed by binary install overview (Details are at the [/doc](https://yas3fs.ai-integration.biz/doc) path at the home domain) and is followed by the original s3fs README. The forked s3fs and binaries for all platforms are here, everything else is in the home domain.
 
 # Getting Started #
 
