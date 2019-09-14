@@ -1,36 +1,49 @@
-# [YAS3FS](http://yas3fs.ai-integration.biz) #
+# [YAS3FS](http://yas3fs.ai-integration.biz/dev-doc) #
 
-YAS3FS started as a project to refurbish [wins3fs on SourceForge](http://wins3fs.sourceforge.net) for a cloud vendors Windows targetting intentions but it was found to be inadequate so that project
-was cancelled and the scope changed to be an exemplar of DDD and x-platform dot net development.
- 
+NB: I did not learn of danilop's python based project here of the same name before starting with this and my approach and goals are quite different so there will be at least 2
+YAS3FS, though his uses lower case and can be pip installed.
 
-This &sect;'s header links the project home, followed by binary install overview (Details are at the [/doc](https://yas3fs.ai-integration.biz/doc) path at the home domain) and is followed by the original s3fs README. The forked s3fs and binaries for all platforms are here, everything else is in the home domain.
+YAS3FS's origins relative to wins3fs and the original sponsor are depicted on the [timeline](https://yas3fs.ai-integration.biz), and the doc (linked above) has more detail, in summary the changes relative to it are:
 
-# Getting Started #
+   * Create a new GUI and whole app context based on .net core and EF.
+   * Drop everything except the Affirma ThreeSharp code and cull and refactor that to use Amazon SDKs.
+   * Make the new thing platform independent to the extent of having:
 
-  The 1.0 dot net core elements for linux, mac, and windows are common GUI elements presented on all three platforms and operating against
-  standard s3fs on the first two and optionally using the YAS3FS driver. Unix s3fs doesn't run on Windows so the YAS3FS driver isn't optional there.
-   
-  Since unix s3fs is not modified for YAS3FS 1.0, the recommended action for non developer use is to do the regular s3fs installs for those platforms,
-  i.e with port or brew for Mac, the distro's repo for linux as well as the dot net core/mono elements.
+       * a dot net 4 extension of WinFsp
+       * a dot net core extension of OSX Fuse
+       * a dot net core GUI for s3fs
 
-  In 2.0 and later the YAS3FS driver will be the default on all platforms but in 1.0 it is enabled for testing only.
 
-## Linux ##
+YAS3FS 1.0 targets just the extension DLL to be used with WinFsp and just Amazon S3, 2.0 has the larger scope above and begins the expansion to a subset of tthe zoo of simple storage services listed in the wiki article.
 
-  There's no install for linux in the 1.0/2.0 epoch, you have to build from the sources in the home repo.
-  
-## Mac OSX ##
+Sections of this file
 
-  The Mac app installs in the normal way from the binary (dmg). Install [OS X Fuse](https://osxfuse.github.io) first, then install the dmg here.
+2. Git repository layout
+3. Instructions for installing the current binaries
+4. The original readmes for wins3fs and s3fs-fuse.
 
-## Windows ##
+This &sect;'s header links the developer's document, accessible to developer class users.
 
-  YAS3FS operates as a dot net extension of WinFsp so you need to first install [WinFsp](http://www.secfs.net/winfsp/download/).
+# Repository Layout #
 
-  After that, assuming you defaulted everything, you can install the MSI here in the normal way.
+Starred  items  present in my github repo, others in my private git repo.
 
-# Original S3FS Readme #
+|File/Folder | Content |
+-------------|---------
+|   README.md*         | this file |
+|   dotNetV1          | original 2008 sourceforge code set|
+|   YAS3FS*          | current Mac and Windows binaries |
+|   s3fs*              | forked s3fs repo (root at github)|
+|   YAS3FS/code     | the VS code project |
+|   YAS3FS/VS2K17   | the VisualStudio 2017 solution(s)|
+|   YAS3FS/VS2K19   | the VisualStudio 2019 solution(s)|
+
+
+ The VS code project is for linux and mono, the VS2K19 is for Mac and OSX Fuse s3fs.
+
+ The [end user doc](http://yas3fs.ai-integration.biz/doc) has detailed installation help.
+
+# Original Readmes #
 
 ## s3fs
 
@@ -201,3 +214,108 @@ Copyright (C) 2010 Randy Rizun <rrizun@gmail.com>
 
 Licensed under the GNU GPL version 2
 
+# wins3fs #
+
+```
+WinS3FS by joelhewitt
+
+An Amazon S3 WINFUSE filesystem for Windows
+
+To use:
+
+
+1.  Firstly create a S3 account at amazonaws.com.
+In the course of registering, copy your awsAccessKeyId and awsSecretAccessKey.
+
+
+2.  Run wins3fs.exe, this will make the WinS3FS.exe.conf file
+populating it with your buckets.
+
+If this is the first time you ran winfuse then you will be asked for your
+awsAccessKeyId and awsSecretAccessKey keys.  Additionally if you haven't used
+Amazon S3 before, you will be asked to create a bucket. Otherwise WinS3FS will
+use your existing buckets.
+
+If the help program wins3fs-config.exe is run after winfuse.exe has alread been started, 
+wins3fs.exe will need a restart. 
+
+It would not be advisable to run winfuse-config.exe if you are in the middle 
+of copying a file from S3 via WinS3FS.
+
+4.  Assuming you were able to run winfuse and enter your aws keys, and
+perhaps enter a bucket name, you should be presented with "WinS3FS" icon in
+the tray bar. Right clicking on this icon will preset a menu of options.
+"Exit" is self explanitory, "Add Bucket" allow you to add extra buckets.
+Clicking "show" and/or "hide" will reveal a window with a text output area.
+During the alpha/beta release of this software this will show debugging 
+information. If WinS3FS is compiled as a service this window will not show.
+Note in the future running WinS3FS as a service will no be supported.
+
+5.  open a command prompt and run "net view \\s3" or open a windows explorer
+window and type in \\s3, and you should see a list of buckets you have accessable.
+
+6.  if in a command prompt type dir \\s3\<bucket name>  to see the files in that bucket
+or in windows explorer open the bcuket you would like to use.
+
+7.  Copy your files.
+
+8.  All files copied to your S3 bucket are made public readable. So if you
+had copied a file name "index.htm" into S3, you can now from your web browser
+enter "<bucketname>.s3.amazonaws.com/index.htm" and view the file you made.
+
+
+
+If the above instructions do not get WinS3FS working, make sure you have .Net
+intalled on your computer.  Make sure you did not delete a quotation mark in
+the WinFUSE.exe.conf-template.  Do you have a bucket available in S3?
+
+BUGS:
+
+As of Sept 22, 2008:
+--You can copy from S3 to your local computer, and get the file properties.
+And you can copy files into S3.  At the moment copying seems only to work
+from the command prompt, and only when you do a dir on the bucket:
+
+(start winfuse after it has been properly configured)
+dir \\s3\bucketname
+copy \\s3\bucketname\filename c:\localpath\localname 
+or
+copy c:\localpath\localname \\s3\bucketname\filename 
+
+
+The reason for this is that the filesystem is constantly looking that directories
+and files. When they are local the time to look at a file is small. But when we need
+to send out a request to S3 and parse the XML every time we inspect a file, things get
+bogged down. So when you perform a directory listing the contents are saved for
+future use.  If you try to copy a file and have not performed a dir, the directory
+contents are blank or invalid.
+
+--You cannot change the ACL of a file. You cannot create a subdirectory in your bucket.
+
+--Theoretically you could copy files from one bucket to another, but I have not tried it.
+
+--Subdirectories in S3 are not handeled properly, WinS3FS tries to download the
+file named "directory/filename" 
+
+--If the bucket name exceeds Windows maximum for SMB shares (15 characters), the
+bucket name is truncated in the \\s3 directory listing, but the full name needs
+to be provided to cd into it.  But everything works ok after that.
+
+--As the ThreeSharp library does not allow byte ranges of a file to be
+downloaded, the entire file is downloaded at once to a temporary file on the
+local computer.  Then that temp file is passed on to the filesystem half which
+copies the file to the destination intended.  This wreaks havok with the
+"progress bar" since the entire file is retreived from S3 with no intervention
+from the computer, and once the file is locally present, the progress bar
+progresses, albeit quickly. The the temp file is deleted
+
+Enjoy.
+
+Joel
+
+2008 by Joel Hewitt
+
+THIS SOFTWARE IS PROVIDED "AS IS" AND WITHOUT ANY EXPRESS OR
+IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED
+WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE.
+```
