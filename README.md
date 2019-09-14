@@ -7,7 +7,7 @@ YAS3FS's origins relative to wins3fs and the original sponsor are depicted on th
 
    * Create a new GUI and whole app context based on .net core and EF.
    * Make a domain of simple storage and integrate concepts from Affirma, yas3fs, the source goof, and others
-   * Only use and abstract a common API for all simple storage vendors supported
+   * Abstract and use only the common API for all simple storage vendors as a facade for their current individual APIs
    * Make the new thing platform independent to the extent of having:
 
        * a dot net 4 extension of WinFsp
