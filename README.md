@@ -1,9 +1,10 @@
-# [YAS3FS](http://yas3fs.ai-integration.biz/dev-doc) #
+# [YAS3FS](https://yas3fs.ai-integration.biz/doc) #
 
 NB: I did not learn of danilop's python based project here of the same name before starting with this and my approach and goals are quite different so there will be at least 2
 YAS3FS, though his uses lower case and can be pip installed.
 
-YAS3FS's origins relative to wins3fs and the original sponsor are depicted on the [timeline](https://yas3fs.ai-integration.biz), and the doc (linked above) has more detail, in summary the changes relative to it are:
+YAS3FS's origins relative to wins3fs and the original sponsor are depicted on the [timeline](https://yas3fs.ai-integration.biz), and the
+dev doc (linked above but at dev-doc) has more detail, in summary the SOW for YAS3FS is simply:
 
    * Create a new GUI and whole app context based on .net core and EF.
    * Make a domain of simple storage and integrate concepts from Affirma, yas3fs, the source goof, and others
