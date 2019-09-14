@@ -6,7 +6,7 @@ YAS3FS, though his uses lower case and can be pip installed.
 YAS3FS's origins relative to wins3fs and the original sponsor are depicted on the [timeline](https://yas3fs.ai-integration.biz), and the doc (linked above) has more detail, in summary the changes relative to it are:
 
    * Create a new GUI and whole app context based on .net core and EF.
-   * Drop everything except the Affirma ThreeSharp code and cull and refactor that to use Amazon SDKs.
+   * Make a domain of simple storage and integrate concepts from Affirma, the yas3fs, the source goof
    * Make the new thing platform independent to the extent of having:
 
        * a dot net 4 extension of WinFsp
