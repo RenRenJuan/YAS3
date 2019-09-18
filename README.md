@@ -1,9 +1,9 @@
-# [YAS3FS](https://yas3fs.ai-integration.biz/doc) #
+# [YAS3](https://yas3fs.ai-integration.biz/doc) #
 
-NB: I did not learn of danilop's python based project here of the same name before starting with this and my approach and goals are quite different so there will be at least 2
-YAS3FS, though his uses lower case and can be pip installed.
+NB: I did not learn of danilop's python based project here of the same name (yas3fs, pip installable) before starting with this and my approach and goals are quite different. So I dropped the FS
+and it's now just YAS3, though some places like the domain may retain the FS, dirs in the repo, etc.
 
-YAS3FS's origins relative to wins3fs and the original sponsor are depicted on the [timeline](https://yas3fs.ai-integration.biz), and the
+YAS3's origins relative to wins3fs and the original sponsor are depicted on the [timeline](https://yas3fs.ai-integration.biz), and the
 dev doc (linked above but at dev-doc) has more detail, in summary the SOW for YAS3FS is simply:
 
    * Create a new GUI and whole app context based on .net core and EF.
