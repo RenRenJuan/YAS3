@@ -29,10 +29,10 @@ dev doc historical section for more detail, in summary the SOW for YAS3 is simpl
 Sections of this file
 
 2. Git repository layout
-3. Instructions for installing the current binaries
-4. The original readmes for s3fs-fuse and the windows/Affirma based thing.
+3. The original readmes for s3fs-fuse ...
+4  ...  and the windows/Affirma based thing.
 
-This &sect;'s header links the end-user document.
+This &sect;'s header links the end-user document which has installation detail.
 
 # Repository Layout #
 
@@ -51,7 +51,7 @@ Starred  items  present in my github repo, others in my private git repo.
 
  The VS code project is for linux and mono, the VS2K19 is for Mac and OSX Fuse s3fs.
 
- The [end user doc](http://yas3fs.ai-integration.biz/doc) has detailed installation help.
+ The [developer's doc](http://yas3fs.ai-integration.biz/dev-doc) requires authentication.
 
 # Original Readmes #
 
