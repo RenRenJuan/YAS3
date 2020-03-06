@@ -30,7 +30,7 @@ Sections of this file
 
 2. Git repository layout
 3. The original readmes for s3fs-fuse ...
-4  ...  and the windows/Affirma based thing.
+4.  ...  and the windows/Affirma based thing.
 
 This &sect;'s header links the end-user document which has installation detail.
 
