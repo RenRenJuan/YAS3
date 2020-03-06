@@ -1,34 +1,38 @@
 # [YAS3](https://yas3fs.ai-integration.biz/doc) #
 
-NB: I did not learn of danilop's python based project here of the same name (yas3fs, pip installable) before starting with this and my approach and goals are quite different. So I dropped the FS
-and it's now just YAS3, though some places like the domain may retain the FS, dirs in the repo, etc.
+Learned of danilop's  project here  (yas3fs, pip installable) after choosing YAS3FS and my approach and goals are quite different. So I dropped the FS
+and it's now just YAS3. YAS3's origins relative to wins3fs (cf the [timeline](https://yas3fs.ai-integration.biz), and the
+dev doc historical section for more detail, in summary the SOW for YAS3 is simply:
 
-YAS3's origins relative to wins3fs and the original sponsor are depicted on the [timeline](https://yas3fs.ai-integration.biz), and the
-dev doc (linked above but at dev-doc) has more detail, in summary the SOW for YAS3FS is simply:
-
-   * Create a new GUI and whole app context based on .net core and EF.
-   * Make a domain of simple storage and integrate concepts from Affirma, yas3fs, the source goof, and others
+   * Create a new GUI and whole app context based on redvant/DCMS<.
+   * Make a domain of simple storage and integrate concepts from Affirma, yas3fs, etc.
    * Abstract and use only a common API for all simple storage vendors as a facade for their current individual APIs
    * Make the new thing platform independent to the extent of having:
 
        * a dot net 4 extension of WinFsp
        * a dot net core extension of OSX Fuse
-       * a dot net core GUI for s3fs
+       * the same redvant GUI as used with above for s3fs adapted for domain space
 
-The first pilot binaries target just the extension DLL to be used with WinFsp and just Amazon S3.
-The MacOS binary will be apparent as a dmg and the list below will be maintained
+   Windows MSI and MacOS dmg are the content of the YAS3 directory with binaries for the first two, the 3rd operates only as a DS service.
 
-       Simple Storage Service Vendors Supported
+   Complete and current sources are available to developer class users of my domains.
+
+       The reference Simple Storage Service Vendors are
 
         - AWS S3
+        - Linode Object Storage
+
+       Additional supported ones will be listed below as they are tested.
+
+        - Google Cloud Storage
 
 Sections of this file
 
 2. Git repository layout
 3. Instructions for installing the current binaries
-4. The original readmes for wins3fs and s3fs-fuse.
+4. The original readmes for s3fs-fuse and the windows/Affirma based thing.
 
-This &sect;'s header links the developer's document, accessible to developer class users.
+This &sect;'s header links the end-user document.
 
 # Repository Layout #
 
