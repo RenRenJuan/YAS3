@@ -1,8 +1,8 @@
 # [YAS3](https://yas3fs.ai-integration.biz/doc) #
 
 Learned of danilop's  project here  (yas3fs, pip installable) after choosing YAS3FS and my approach and goals are quite different. So I dropped the FS
-and it's now just YAS3. YAS3's origins relative to wins3fs (cf the [timeline](https://yas3fs.ai-integration.biz), and the
-dev doc historical section for more detail, in summary the SOW for YAS3 is simply:
+and it's now just YAS3. YAS3 has origin relative to wins3fs, cf the [timeline](https://yas3fs.ai-integration.biz and the
+dev doc historical section for more detail. In summary the SOW for YAS3 is simply:
 
    * Create a new GUI and whole app context based on redvant/DCMS<.
    * Make a domain of simple storage and integrate concepts from Affirma, yas3fs, etc.
